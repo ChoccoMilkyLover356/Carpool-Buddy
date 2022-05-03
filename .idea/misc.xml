@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.17971887550200802" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1755464480874317" />
+        <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_add_vehicle.xml" value="0.25" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_auth.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_listing.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_main.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_user_profile.xml" value="0.335" />
+        <entry key="..\:/Users/wesle/AndroidStudioProjects/CarPoolBuddy/app/src/main/res/layout/activity_vehicles_info.xml" value="0.2796875" />
       </map>
     </option>
   </component>

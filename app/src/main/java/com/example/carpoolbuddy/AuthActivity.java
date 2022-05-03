@@ -31,7 +31,7 @@ public class AuthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_auth);
 
         mAuth = FirebaseAuth.getInstance();
-        // firestore = FirebaseFirestore.getInstance();
+        firestore = FirebaseFirestore.getInstance();
 
         emailField = findViewById(R.id.editTextEmail);
         passwordField = findViewById(R.id.editTextPassword);
@@ -45,6 +45,20 @@ public class AuthActivity extends AppCompatActivity {
 
         System.out.println(String.format("email: %s and password: %s", emailString, passwordString));
 
+        FirebaseUser mUser = mAuth.getCurrentUser();
+        mAuth.signInWithEmailAndPassword(emailString, passwordString).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    Log.d("LOG IN", "Successfully logged in the user");
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    updateUI(user);
+                } else {
+                    Log.w("SIGN UP","CreateUserWithEmail:failure", task.getException());
+                    updateUI(null);
+                }
+            }
+        });
     }
 
     public void signUp(View v)
