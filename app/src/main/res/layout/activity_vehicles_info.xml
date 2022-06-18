@@ -29,8 +29,20 @@
       app:layout_constraintTop_toTopOf="parent" />
 
   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/Rec"
       android:layout_width="411dp"
       android:layout_height="593dp"
-      tools:layout_editor_absoluteX="-1dp"
-      tools:layout_editor_absoluteY="138dp" />
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:layout_editor_absoluteX="-1dp" />
+
+  <Button
+      android:id="@+id/button7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="28dp"
+      android:onClick="testDB"
+      android:text="Button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

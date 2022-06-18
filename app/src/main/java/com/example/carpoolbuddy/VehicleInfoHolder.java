@@ -10,16 +10,18 @@ import com.example.carpoolbuddy.R;
 public class VehicleInfoHolder extends RecyclerView.ViewHolder{
 
 
-        protected TextView idText;
-        protected TextView typeText;
-        protected TextView nameText;
-        protected TextView priceText;
-        protected TextView descriptionText;
+        protected TextView owner;
+        protected TextView model;
+        protected TextView vehicleType;
+        protected TextView basePrice;
 
-    public VehicleInfoHolder(@NonNull View itemview)
+    public VehicleInfoHolder(@NonNull View itemview )
         {
             super(itemview);
-            //typeText = itemview.findViewById(R.id.typeTextView);
+            owner = itemview.findViewById(R.id.owner);
+            model = itemview.findViewById(R.id.model);
+            vehicleType = itemview.findViewById(R.id.vehicleType);
+            basePrice = itemview.findViewById(R.id.basePrice);
 
         }
     }
